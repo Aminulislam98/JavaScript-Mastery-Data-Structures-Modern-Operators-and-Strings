@@ -380,8 +380,8 @@ const restaurant = {
   },
 
   orderPizza: function (mainIngredient, ...otherIngredients) {
-    console.log(mainIngredient);
-    console.log(otherIngredients);
+    // console.log(mainIngredient);
+    // console.log(otherIngredients);
   },
 };
 
@@ -464,3 +464,9 @@ const [, , third, ...others] = check;
 // console.log('others', others);
 
 // console.log(window);
+// Short circuiting (&& and ||)
+// Use any data type, return any data type, short-circuiting
+// OR operator always gives truthy value
+// JavaScript has 6 falsy value: 0 , '' , false, undefined, null nan
+console.log(3 || 'aminul');
+console.log(0 || 'aminul');
