@@ -628,10 +628,8 @@ const printGoals = function (...rest) {
   }
   console.log(`${rest.length} goals were Scored`);
 };
-
 printGoals(...game.scored);
 
 // 7
-
 team1 < team2 && console.log('team 1 is likely to win');
 team1 > team2 && console.log('team 2 is likely to win');
