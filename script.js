@@ -342,13 +342,31 @@ const restaurant = {
   name: 'Spice Garden',
   address: 'London, United Kingdom',
   categories: ['Indian', 'Asian', 'Vegetarian'],
+
   starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
+
   mainMenu: [
     'Chicken Biryani',
     'Butter Chicken',
     'Paneer Curry',
     'Vegetable Fried Rice',
   ],
+
+  openingHours: {
+    mon: {
+      open: 11,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 10,
+      close: 24,
+    },
+  },
+
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
