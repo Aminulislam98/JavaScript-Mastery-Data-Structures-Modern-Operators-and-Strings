@@ -59,12 +59,19 @@ const restaurant = {
     'Paneer Curry',
     'Vegetable Fried Rice',
   ],
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
 };
+// const [starter, main] = restaurant.order(0, 1);
+// console.log(starter, main);
 
 const arr = [2, 3, 4];
 const [x, y, z] = arr;
 // console.log(x, y, z);
 
-const [first, , third] = restaurant.categories;
-// console.log(first, third);
-// Learned how to destructured array
+let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
+
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
