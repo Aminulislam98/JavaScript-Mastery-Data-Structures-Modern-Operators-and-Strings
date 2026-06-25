@@ -359,4 +359,8 @@ const {
   categories: restaurantCategories,
   address: restaurantAddress,
 } = restaurant;
-console.log(restaurantName, restaurantCategories, restaurantAddress);
+// console.log(restaurantName, restaurantCategories, restaurantAddress);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
+
+console.log(menu, starters);
