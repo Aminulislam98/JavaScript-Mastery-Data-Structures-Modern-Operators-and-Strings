@@ -372,14 +372,17 @@ const restaurant = {
   },
 };
 
-const {
-  name: restaurantName,
-  categories: restaurantCategories,
-  address: restaurantAddress,
-} = restaurant;
+// const { openingHours } = restaurant;
+// console.table(openingHours);
+
+// const {
+//   name: restaurantName,
+//   categories: restaurantCategories,
+//   address: restaurantAddress,
+// } = restaurant;
 // console.log(restaurantName, restaurantCategories, restaurantAddress);
 
-const { menu = [], starterMenu: starters = [] } = restaurant;
+// const { menu = [], starterMenu: starters = [] } = restaurant;
 
 // console.log(menu, starters);
 
@@ -389,9 +392,9 @@ const { menu = [], starterMenu: starters = [] } = restaurant;
 // const obj = { a: 23, b: 7, c: 14 };
 // ({ a, b } = obj);
 
-const { name, openingHours, address } = restaurant;
+// const { name, openingHours, address } = restaurant;
 
-const {
-  mon: { open, close },
-} = openingHours;
+// const {
+//   mon: { open, close },
+// } = openingHours;
 // console.log(open, close);
