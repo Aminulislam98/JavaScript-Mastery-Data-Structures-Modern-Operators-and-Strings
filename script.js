@@ -384,7 +384,14 @@ const { menu = [], starterMenu: starters = [] } = restaurant;
 // console.log(menu, starters);
 
 // Mutating variable ;
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
-({ a, b } = obj);
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
+// ({ a, b } = obj);
+
+const { name, openingHours, address } = restaurant;
+
+const {
+  mon: { open, close },
+} = openingHours;
+// console.log(open, close);
