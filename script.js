@@ -308,10 +308,29 @@ const books = [
     highlighted: true,
   },
 ];
-// assignment 1.1 passed 🥇
+// assignment 1.1 passed
 const [firstBook, secondBook] = books;
 // console.log('firstBook:', firstBook, 'secondBook:', secondBook);
 
-// assignment 1.2 passed 🥇
+// assignment 1.2 passed
 const [, , thirdBook] = books;
 // console.log('thirdBook:', thirdBook);
+
+// assignment 1.3 passed
+const ratings = [
+  ['rating', 4.19],
+  ['ratingsCount', 144584],
+];
+// const rating = ratings[0];
+// const ratingsCount = ratings[1];
+
+// console.log('rating:', rating);
+// console.log('ratingsCount:', ratingsCount);
+const [[, rating], [, ratingsCount]] = ratings;
+// console.log('rating:', rating, 'ratingsCount:', ratingsCount);
+
+// assignment 1.4 passed
+const ratingStars = [63405, 1808];
+const [fiveStarRatings = 0, oneStarRatings = 0, threeStarRatings = 0] =
+  ratingStars;
+console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
