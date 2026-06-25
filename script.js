@@ -338,54 +338,54 @@
 // console.log(fiveStarRatings, oneStarRatings, threeStarRatings);
 
 // Destructuring Object ;
-const restaurant = {
-  name: 'Spice Garden',
-  address: 'London, United Kingdom',
-  categories: ['Indian', 'Asian', 'Vegetarian'],
+// const restaurant = {
+//   name: 'Spice Garden',
+//   address: 'London, United Kingdom',
+//   categories: ['Indian', 'Asian', 'Vegetarian'],
 
-  starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
+//   starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
 
-  mainMenu: [
-    'Chicken Biryani',
-    'Butter Chicken',
-    'Paneer Curry',
-    'Vegetable Fried Rice',
-  ],
+//   mainMenu: [
+//     'Chicken Biryani',
+//     'Butter Chicken',
+//     'Paneer Curry',
+//     'Vegetable Fried Rice',
+//   ],
 
-  openingHours: {
-    mon: {
-      open: 11,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 10,
-      close: 24,
-    },
-  },
+//   openingHours: {
+//     mon: {
+//       open: 11,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 10,
+//       close: 24,
+//     },
+//   },
 
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
-    // console.log(
-    //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
-    // );
-  },
-  makePaste: function (ing1, ing2, ing3) {
-    // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
-  },
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
+// console.log(
+//   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+// );
+// },
+// makePaste: function (ing1, ing2, ing3) {
+// console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+// },
 
-  orderPizza: function (mainIngredient, ...otherIngredients) {
-    // console.log(mainIngredient);
-    // console.log(otherIngredients);
-  },
-};
+// orderPizza: function (mainIngredient, ...otherIngredients) {
+// console.log(mainIngredient);
+// console.log(otherIngredients);
+//   },
+// };
 
-restaurant.orderPizza('Mushroom');
+// restaurant.orderPizza('Mushroom');
 // const ingredients = [
 //   prompt('How would you like to make pasta? ingredient 1 ? '),
 //   prompt('How would you like to make pasta? ingredient 2 ? '),
@@ -420,46 +420,46 @@ restaurant.orderPizza('Mushroom');
 // const obj = { a: 23, b: 7, c: 14 };
 // ({ a, b } = obj);
 
-const { name, openingHours, address } = restaurant;
+// const { name, openingHours, address } = restaurant;
 
-const {
-  mon: { open, close },
-} = openingHours;
+// const {
+//   mon: { open, close },
+// } = openingHours;
 // console.log(open, close);
 
 // spread operator (...)
-const arr = [2, 4, 5];
-const newArr = [2, 3, ...arr];
+// const arr = [2, 4, 5];
+// const newArr = [2, 3, ...arr];
 // console.table(newArr);
-const newMenu = [...restaurant.mainMenu, 'Beef biryani'];
+// const newMenu = [...restaurant.mainMenu, 'Beef biryani'];
 // console.table(newMenu);
 
 // Iterables: arrays, strings, maps, sets, NOT objects
-const newRestaurant = { ...restaurant };
-newRestaurant.name = 'Aminur era';
+// const newRestaurant = { ...restaurant };
+// newRestaurant.name = 'Aminur era';
 // console.log('original', restaurant.name);
 // console.log('copy', newRestaurant.name);
-restaurant.mainMenu.push('Samasa');
+// restaurant.mainMenu.push('Samasa');
 // console.log(restaurant.mainMenu);
 // console.log(newRestaurant.mainMenu);
 
 // const { sat, ...weekends } = restaurant.openingHours;
 // console.log(sat, weekends);
 
-const fiveNum = [2, 3];
+// const fiveNum = [2, 3];
 
-const howMany = function (...others) {
-  let total = 0;
+// const howMany = function (...others) {
+//   let total = 0;
 
-  for (let i = 0; i < others.length; i++) total += others[i];
-  // console.log(total);
-};
-howMany(...fiveNum);
+//   for (let i = 0; i < others.length; i++) total += others[i];
+// console.log(total);
+// };
+// howMany(...fiveNum);
 
-const check = [2, 3, 4];
+// const check = [2, 3, 4];
 
-const { sat, ...weekends } = restaurant.openingHours;
-const [, , third, ...others] = check;
+// const { sat, ...weekends } = restaurant.openingHours;
+// const [, , third, ...others] = check;
 // console.log(sat, 'this is weekends:', weekends);
 // console.log('others', others);
 
@@ -472,12 +472,12 @@ const [, , third, ...others] = check;
 // console.log(0 || 'aminul');
 // The nullish Coalescing Operator , it is introduced in 2020
 
-restaurant.numGuest = 0;
-const guest = restaurant.numGuest || 10;
+// restaurant.numGuest = 0;
+// const guest = restaurant.numGuest || 10;
 
 // console.log(guest);
 
-const newGuest = restaurant.numGuest ?? 10;
+// const newGuest = restaurant.numGuest ?? 10;
 // Nullish coalescing : undefined , null (NOT 0 or '')
 // console.log(newGuest);
 
@@ -518,15 +518,15 @@ const newGuest = restaurant.numGuest ?? 10;
 // rest1.owner &&= '<ANONYMOUS>';
 // rest2.owner &&= '<ANONYMOUS>';
 
-const rest1 = {
-  resName: 'Capri',
-  numGuest: 0,
-};
+// const rest1 = {
+//   resName: 'Capri',
+//   numGuest: 0,
+// };
 
-const rest2 = {
-  resName: 'Capri',
-  owner: 'Aminul',
-};
+// const rest2 = {
+//   resName: 'Capri',
+//   owner: 'Aminul',
+// };
 // OR Assignment operator
 // rest1.numGuest ||= 10;
 // rest2.numGuest ||= 10;
@@ -538,8 +538,51 @@ const rest2 = {
 // And Assignment operator
 // rest1.owner = rest1.owner && '<ANONYMOUS>';
 // rest2.owner = rest2.owner && '<ANONYMOUS>';
-rest1.owner &&= '<ANONYMOUS>';
-rest2.owner &&= '<ANONYMOUS>';
+// rest1.owner &&= '<ANONYMOUS>';
+// rest2.owner &&= '<ANONYMOUS>';
 
 // console.log('firstRes', rest1);
 // console.log('secondRest', rest2);
+
+// CHALLENGES 1
+
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
