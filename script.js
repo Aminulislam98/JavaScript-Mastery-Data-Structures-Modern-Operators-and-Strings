@@ -480,3 +480,66 @@ const guest = restaurant.numGuest || 10;
 const newGuest = restaurant.numGuest ?? 10;
 // Nullish coalescing : undefined , null (NOT 0 or '')
 // console.log(newGuest);
+
+// Logical assignment operator
+
+// const rest1 = {
+//   resName: 'Capri',
+//   numGuest: 0,
+// };
+
+// const rest2 = {
+//   resName: 'Capri',
+//   owner: 'Aminul',
+// };
+
+// OR assignment operator
+// rest1.numGuest = rest1.numGuest || 10;
+// rest2.numGuest = rest2.newGuest || 10;
+
+// console.log('it has already numGuest', rest1.numGuest);
+// console.log('it does not have numGuest', rest2.numGuest);
+
+// rest1.numGuest ||= 10;
+// rest2.numGuest ||= 10;
+
+// console.log('it has already numGuest', rest1.numGuest);
+// console.log('it does not have numGuest', rest2.numGuest);
+
+// rest1.numGuest ??= 10;
+// rest2.numGuest ??= 10;
+
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+
+// console.log(rest1.owner);
+// console.log(rest2.owner);
+
+// rest1.owner &&= '<ANONYMOUS>';
+// rest2.owner &&= '<ANONYMOUS>';
+
+const rest1 = {
+  resName: 'Capri',
+  numGuest: 0,
+};
+
+const rest2 = {
+  resName: 'Capri',
+  owner: 'Aminul',
+};
+// OR Assignment operator
+// rest1.numGuest ||= 10;
+// rest2.numGuest ||= 10;
+
+// Nullish Assignment operator(the value will assign if value is undefined or null)
+// rest1.numGuest ??= 10;
+// rest2.numGuest ??= 10;
+
+// And Assignment operator
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
+// console.log('firstRes', rest1);
+// console.log('secondRest', rest2);
