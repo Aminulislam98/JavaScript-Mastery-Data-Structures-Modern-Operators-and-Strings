@@ -468,5 +468,15 @@ const [, , third, ...others] = check;
 // Use any data type, return any data type, short-circuiting
 // OR operator always gives truthy value
 // JavaScript has 6 falsy value: 0 , '' , false, undefined, null nan
-console.log(3 || 'aminul');
-console.log(0 || 'aminul');
+// console.log(3 || 'aminul');
+// console.log(0 || 'aminul');
+// The nullish Coalescing Operator , it is introduced in 2020
+
+restaurant.numGuest = 0;
+const guest = restaurant.numGuest || 10;
+
+// console.log(guest);
+
+const newGuest = restaurant.numGuest ?? 10;
+// Nullish coalescing : undefined , null (NOT 0 or '')
+// console.log(newGuest);
