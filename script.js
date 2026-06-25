@@ -378,7 +378,14 @@ const restaurant = {
   makePaste: function (ing1, ing2, ing3) {
     // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
   },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
 };
+
+restaurant.orderPizza('Mushroom');
 // const ingredients = [
 //   prompt('How would you like to make pasta? ingredient 1 ? '),
 //   prompt('How would you like to make pasta? ingredient 2 ? '),
@@ -453,5 +460,7 @@ const check = [2, 3, 4];
 
 const { sat, ...weekends } = restaurant.openingHours;
 const [, , third, ...others] = check;
-console.log(sat, 'this is weekends:', weekends);
-console.log('others', others);
+// console.log(sat, 'this is weekends:', weekends);
+// console.log('others', others);
+
+// console.log(window);
