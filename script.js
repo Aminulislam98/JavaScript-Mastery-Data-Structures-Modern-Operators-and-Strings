@@ -371,17 +371,27 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
   orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
-    console.log(
-      `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
-    );
+    // console.log(
+    //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+    // );
+  },
+  makePaste: function (ing1, ing2, ing3) {
+    // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
   },
 };
-restaurant.orderDelivery({
-  time: 12,
-  address: 'Lavender vale, 21',
-  starterMenuIndex: 1,
-  mainMenuIndex: 0,
-});
+// const ingredients = [
+//   prompt('How would you like to make pasta? ingredient 1 ? '),
+//   prompt('How would you like to make pasta? ingredient 2 ? '),
+//   prompt('How would you like to make pasta? ingredient 3 ? '),
+//   ,
+// ];
+// restaurant.makePaste(...ingredients);
+// restaurant.orderDelivery({
+//   time: 12,
+//   address: 'Lavender vale, 21',
+//   starterMenuIndex: 1,
+//   mainMenuIndex: 0,
+// });
 
 // const { openingHours } = restaurant;
 // console.table(openingHours);
@@ -409,3 +419,29 @@ const {
   mon: { open, close },
 } = openingHours;
 // console.log(open, close);
+
+// spread operator (...)
+const arr = [2, 4, 5];
+const newArr = [2, 3, ...arr];
+// console.table(newArr);
+const newMenu = [...restaurant.mainMenu, 'Beef biryani'];
+// console.table(newMenu);
+
+// Iterables: arrays, strings, maps, sets, NOT objects
+const newRestaurant = { ...restaurant };
+newRestaurant.name = 'Aminur era';
+// console.log('original', restaurant.name);
+// console.log('copy', newRestaurant.name);
+restaurant.mainMenu.push('Samasa');
+// console.log(restaurant.mainMenu);
+// console.log(newRestaurant.mainMenu);
+
+const { sat, ...weekends } = restaurant.openingHours;
+// console.log(sat, weekends);
+
+const fiveNum = [2, 3, 4, 4];
+
+const howMany = function (...others) {
+  console.log(others);
+};
+howMany(...fiveNum);
