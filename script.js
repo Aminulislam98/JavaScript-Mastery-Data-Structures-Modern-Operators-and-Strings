@@ -436,12 +436,22 @@ restaurant.mainMenu.push('Samasa');
 // console.log(restaurant.mainMenu);
 // console.log(newRestaurant.mainMenu);
 
-const { sat, ...weekends } = restaurant.openingHours;
+// const { sat, ...weekends } = restaurant.openingHours;
 // console.log(sat, weekends);
 
-const fiveNum = [2, 3, 4, 4];
+const fiveNum = [2, 3];
 
 const howMany = function (...others) {
-  console.log(others);
+  let total = 0;
+
+  for (let i = 0; i < others.length; i++) total += others[i];
+  // console.log(total);
 };
 howMany(...fiveNum);
+
+const check = [2, 3, 4];
+
+const { sat, ...weekends } = restaurant.openingHours;
+const [, , third, ...others] = check;
+console.log(sat, 'this is weekends:', weekends);
+console.log('others', others);
