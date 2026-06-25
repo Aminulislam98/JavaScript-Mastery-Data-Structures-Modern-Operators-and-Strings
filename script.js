@@ -370,7 +370,18 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+  orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
+    console.log(
+      `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+    );
+  },
 };
+restaurant.orderDelivery({
+  time: 12,
+  address: 'Lavender vale, 21',
+  starterMenuIndex: 1,
+  mainMenuIndex: 0,
+});
 
 // const { openingHours } = restaurant;
 // console.table(openingHours);
@@ -392,9 +403,9 @@ const restaurant = {
 // const obj = { a: 23, b: 7, c: 14 };
 // ({ a, b } = obj);
 
-// const { name, openingHours, address } = restaurant;
+const { name, openingHours, address } = restaurant;
 
-// const {
-//   mon: { open, close },
-// } = openingHours;
+const {
+  mon: { open, close },
+} = openingHours;
 // console.log(open, close);
