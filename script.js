@@ -634,6 +634,9 @@ printGoals(...game.scored);
 // team1 < team2 && console.log('team 1 is likely to win');
 // team1 > team2 && console.log('team 2 is likely to win');
 
+//
+const weekDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
 // Looping ARRAYS: The for-of loop;
 const restaurant = {
   name: 'Spice Garden',
@@ -650,7 +653,7 @@ const restaurant = {
   ],
 
   openingHours: {
-    mon: {
+    [weekDays[3]]: {
       open: 11,
       close: 22,
     },
@@ -659,7 +662,7 @@ const restaurant = {
       close: 23,
     },
     sat: {
-      open: 10,
+      open: 0,
       close: 24,
     },
   },
@@ -690,3 +693,20 @@ for (const [i, el] of menu.entries()) {
 }
 
 // Enhance Object literals
+// compute means calculate
+
+// const [firstDays, ...resDays] = weekDays;
+// console.log(resDays);
+// const user = {
+//   name: {
+//     open: 12,
+//     closed: 10,
+//   },
+// };
+// const firstName = user.lastName.open;
+// console.log(firstName);
+
+for (const day of weekDays) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we are ${open}`);
+}
