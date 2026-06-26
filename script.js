@@ -956,5 +956,18 @@ const mexicanFoods = new Set([
 ]);
 
 const commonFoods = italianFoods.intersection(mexicanFoods);
-console.log('Intersection', commonFoods);
-console.log([...commonFoods]);
+// console.log('Intersection', commonFoods);
+// console.log([...commonFoods]);
+
+// intersection method is , this method takes the same value from 2 set of collection and make a new set collection,
+
+// what is union method : union method take all unique value form 2 set of collection and make new set collection
+
+// union method
+const italianMexicanFusion = italianFoods.union(mexicanFoods);
+console.log(italianMexicanFusion);
+
+// difference method : difference return the elements that are in the first set but not in the second set as in a new set
+
+// const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
+// console.log(uniqueItalianFoods);
