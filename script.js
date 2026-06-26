@@ -712,3 +712,9 @@ for (const day of weekDays) {
 }
 
 // console.log(restaurant.orders?.(2, 0) ?? 'Method does not exist.');
+
+// const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
+// console.log(user[0]?.firstName ?? 'User not exist');
+
+const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
+// console.log(user[1]?.firstName ?? 'User not exist');
