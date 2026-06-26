@@ -708,7 +708,7 @@ for (const [i, el] of menu.entries()) {
 
 for (const day of weekDays) {
   const open = restaurant.openingHours[day]?.open ?? 'closed';
-  console.log(`On ${day}, we are ${open}`);
+  // console.log(`On ${day}, we are ${open}`);
 }
 
 // console.log(restaurant.orders?.(2, 0) ?? 'Method does not exist.');
@@ -718,3 +718,36 @@ for (const day of weekDays) {
 
 const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
 // console.log(user[1]?.firstName ?? 'User not exist');
+// Looping Object: Object keys, and Entries
+
+// getting all keys form object through using Object.key() method
+const properties = Object.keys(weekDays);
+// console.log(properties);
+
+// getting all value form object through using Object.value() method
+const values = Object.values(weekDays);
+// console.log(values);
+
+// getting all entires(property) form object through using Object.entries() method
+
+//  openingHours: {
+//     [weekDays[3]]: {
+//       open: 11,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 24,
+//     },
+//   },
+
+const entries = Object.entries(restaurant.openingHours);
+console.log(entries);
+
+for (const [day, { open, close }] of entries) {
+  console.log(`On ${day}, we open at ${open} and closed at ${close}`);
+}
