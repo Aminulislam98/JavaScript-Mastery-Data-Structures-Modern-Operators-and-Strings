@@ -915,3 +915,22 @@ const game = {
 //   }
 // }
 // console.table(scorers);
+
+// lecture sets;
+const newSet = new Set(['Banana', 'Apple', 'Orange', 'Strawberry', 'Banana']);
+
+newSet.add('Mango');
+newSet.delete('Mango');
+// newSet.clear();
+// console.log(newSet.size);
+// for (const item of newSet) {
+//   console.log(item);
+// }
+
+console.log([...newSet]);
+const staff = ['manager', 'chef', 'waiter', 'chef', 'manager'];
+console.log(staff);
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(new Set('aminul'));
