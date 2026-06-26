@@ -664,19 +664,19 @@ const restaurant = {
     },
   },
 
-  order: function (starterIndex, mainIndex) {
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-  orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
+  orderDelivery({ starterMenuIndex, mainMenuIndex, time, address }) {
     // console.log(
     //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
     // );
   },
-  makePaste: function (ing1, ing2, ing3) {
+  makePaste(ing1, ing2, ing3) {
     // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
   },
 
-  orderPizza: function (mainIngredient, ...otherIngredients) {
+  orderPizza(mainIngredient, ...otherIngredients) {
     // console.log(mainIngredient);
     // console.log(otherIngredients);
   },
@@ -688,3 +688,5 @@ const menu = [...restaurant.mainMenu, 12];
 for (const [i, el] of menu.entries()) {
   // console.log(`${i + 1}: ${el}`);
 }
+
+// Enhance Object literals
