@@ -971,3 +971,6 @@ console.log(italianMexicanFusion);
 
 // const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
 // console.log(uniqueItalianFoods);
+
+const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
+console.log(uniqueItaAndMex);
