@@ -371,17 +371,17 @@
 //     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
 //   },
 //   orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
-// console.log(
-//   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
-// );
-// },
-// makePaste: function (ing1, ing2, ing3) {
-// console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
-// },
+//     console.log(
+//       `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+//     );
+//   },
+//   makePaste: function (ing1, ing2, ing3) {
+//     console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+//   },
 
-// orderPizza: function (mainIngredient, ...otherIngredients) {
-// console.log(mainIngredient);
-// console.log(otherIngredients);
+//   orderPizza: function (mainIngredient, ...otherIngredients) {
+//     console.log(mainIngredient);
+//     console.log(otherIngredients);
 //   },
 // };
 
@@ -624,12 +624,67 @@ const {
 // 6
 const printGoals = function (...rest) {
   for (let i = 0; i < rest.length; i++) {
-    console.log(rest[i]);
+    // console.log(rest[i]);
   }
-  console.log(`${rest.length} goals were Scored`);
+  // console.log(`${rest.length} goals were Scored`);
 };
 printGoals(...game.scored);
 
 // 7
-team1 < team2 && console.log('team 1 is likely to win');
-team1 > team2 && console.log('team 2 is likely to win');
+// team1 < team2 && console.log('team 1 is likely to win');
+// team1 > team2 && console.log('team 2 is likely to win');
+
+// Looping ARRAYS: The for-of loop;
+const restaurant = {
+  name: 'Spice Garden',
+  address: 'London, United Kingdom',
+  categories: ['Indian', 'Asian', 'Vegetarian'],
+
+  starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
+
+  mainMenu: [
+    'Chicken Biryani',
+    'Butter Chicken',
+    'Paneer Curry',
+    'Vegetable Fried Rice',
+  ],
+
+  openingHours: {
+    mon: {
+      open: 11,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 10,
+      close: 24,
+    },
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({ starterMenuIndex, mainMenuIndex, time, address }) {
+    // console.log(
+    //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+    // );
+  },
+  makePaste: function (ing1, ing2, ing3) {
+    // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    // console.log(mainIngredient);
+    // console.log(otherIngredients);
+  },
+};
+
+const menu = [...restaurant.mainMenu, 12];
+// const num = [3, 4, 5, 6, 6];
+// for (const item of menu) console.log(item);
+for (const [i, el] of menu.entries()) {
+  // console.log(`${i + 1}: ${el}`);
+}
