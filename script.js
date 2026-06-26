@@ -710,3 +710,5 @@ for (const day of weekDays) {
   const open = restaurant.openingHours[day]?.open ?? 'closed';
   console.log(`On ${day}, we are ${open}`);
 }
+
+// console.log(restaurant.orders?.(2, 0) ?? 'Method does not exist.');
