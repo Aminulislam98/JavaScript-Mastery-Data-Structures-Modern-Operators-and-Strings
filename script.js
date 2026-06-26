@@ -617,80 +617,80 @@ const allPlayers = [...player1, player2];
 const players1Final = [...player1, 'Thiago', 'Coutinho', 'Perisic'];
 
 // 5
-const {
-  odds: { team1, x: draw, team2 },
-} = game;
+// const {
+//   odds: { team1, x: draw, team2 },
+// } = game;
 
 // 6
-const printGoals = function (...rest) {
-  for (let i = 0; i < rest.length; i++) {
-    // console.log(rest[i]);
-  }
-  // console.log(`${rest.length} goals were Scored`);
-};
-printGoals(...game.scored);
+// const printGoals = function (...rest) {
+//   for (let i = 0; i < rest.length; i++) {
+// console.log(rest[i]);
+// }
+// console.log(`${rest.length} goals were Scored`);
+// };
+// printGoals(...game.scored);
 
 // 7
 // team1 < team2 && console.log('team 1 is likely to win');
 // team1 > team2 && console.log('team 2 is likely to win');
 
 //
-const weekDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const weekDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 // Looping ARRAYS: The for-of loop;
-const restaurant = {
-  name: 'Spice Garden',
-  address: 'London, United Kingdom',
-  categories: ['Indian', 'Asian', 'Vegetarian'],
+// const restaurant = {
+//   name: 'Spice Garden',
+//   address: 'London, United Kingdom',
+//   categories: ['Indian', 'Asian', 'Vegetarian'],
 
-  starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
+//   starterMenu: ['Garlic Bread', 'Tomato Soup', 'Spring Rolls', 'Chicken Wings'],
 
-  mainMenu: [
-    'Chicken Biryani',
-    'Butter Chicken',
-    'Paneer Curry',
-    'Vegetable Fried Rice',
-  ],
+//   mainMenu: [
+//     'Chicken Biryani',
+//     'Butter Chicken',
+//     'Paneer Curry',
+//     'Vegetable Fried Rice',
+//   ],
 
-  openingHours: {
-    [weekDays[3]]: {
-      open: 11,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0,
-      close: 24,
-    },
-  },
+//   openingHours: {
+//     [weekDays[3]]: {
+//       open: 11,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0,
+//       close: 24,
+//     },
+//   },
 
-  order(starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderDelivery({ starterMenuIndex, mainMenuIndex, time, address }) {
-    // console.log(
-    //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
-    // );
-  },
-  makePaste(ing1, ing2, ing3) {
-    // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
-  },
+//   order(starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery({ starterMenuIndex, mainMenuIndex, time, address }) {
+//     // console.log(
+//     //   `Order receive! ${this.starterMenu[starterMenuIndex]} and ${this.mainMenu[mainMenuIndex]} will be delivered to ${address} at ${time} o'clock. Thank you very much!`,
+//     // );
+//   },
+//   makePaste(ing1, ing2, ing3) {
+//     // console.log(`Enjoy your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+//   },
 
-  orderPizza(mainIngredient, ...otherIngredients) {
-    // console.log(mainIngredient);
-    // console.log(otherIngredients);
-  },
-};
+//   orderPizza(mainIngredient, ...otherIngredients) {
+//     // console.log(mainIngredient);
+//     // console.log(otherIngredients);
+//   },
+// };
 
-const menu = [...restaurant.mainMenu, 12];
+// const menu = [...restaurant.mainMenu, 12];
 // const num = [3, 4, 5, 6, 6];
 // for (const item of menu) console.log(item);
-for (const [i, el] of menu.entries()) {
-  // console.log(`${i + 1}: ${el}`);
-}
+// for (const [i, el] of menu.entries()) {
+//   // console.log(`${i + 1}: ${el}`);
+// }
 
 // Enhance Object literals
 // compute means calculate
@@ -706,26 +706,26 @@ for (const [i, el] of menu.entries()) {
 // const firstName = user.lastName.open;
 // console.log(firstName);
 
-for (const day of weekDays) {
-  const open = restaurant.openingHours[day]?.open ?? 'closed';
-  // console.log(`On ${day}, we are ${open}`);
-}
+// for (const day of weekDays) {
+//   const open = restaurant.openingHours[day]?.open ?? 'closed';
+// console.log(`On ${day}, we are ${open}`);
+// }
 
 // console.log(restaurant.orders?.(2, 0) ?? 'Method does not exist.');
 
 // const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
 // console.log(user[0]?.firstName ?? 'User not exist');
 
-const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
+// const user = [{ firstName: 'Aminul', age: 23 }, { age: 23 }];
 // console.log(user[1]?.firstName ?? 'User not exist');
 // Looping Object: Object keys, and Entries
 
 // getting all keys form object through using Object.key() method
-const properties = Object.keys(weekDays);
+// const properties = Object.keys(weekDays);
 // console.log(properties);
 
 // getting all value form object through using Object.value() method
-const values = Object.values(weekDays);
+// const values = Object.values(weekDays);
 // console.log(values);
 
 // getting all entires(property) form object through using Object.entries() method
@@ -745,12 +745,12 @@ const values = Object.values(weekDays);
 //     },
 //   },
 
-const entries = Object.entries(restaurant.openingHours);
-console.log(entries);
+// const entries = Object.entries(restaurant.openingHours);
+// console.log(entries);
 
-for (const [day, { open, close }] of entries) {
-  console.log(`On ${day}, we open at ${open} and closed at ${close}`);
-}
+// for (const [day, { open, close }] of entries) {
+//   console.log(`On ${day}, we open at ${open} and closed at ${close}`);
+// }
 
 const weekDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
