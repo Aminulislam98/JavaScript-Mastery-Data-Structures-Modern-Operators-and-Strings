@@ -1090,3 +1090,6 @@ console.log(airPlain.indexOf('Air'));
 console.log(airPlain.slice(0, airPlain.indexOf(' ')));
 // learned about last index of method which find last match;
 console.log(airPlain.slice(airPlain.lastIndexOf(' ') + 1));
+
+// when negative number is inside the slice method , it start extracting from end
+console.log(airPlain.slice(-2));
