@@ -1066,3 +1066,10 @@ gameEvents.delete(64);
 
 // 3 challenge
 console.log(`An event happen on average, every ${90 / gameEvents.size}`);
+
+// 4 challenge
+for (const [time, event] of gameEvents) {
+  time < 45
+    ? console.log(`[First Half] ${time}: ${event}`)
+    : console.log(`[Second Half] ${time}: ${event}`);
+}
