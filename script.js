@@ -972,40 +972,40 @@ const italianMexicanFusion = italianFoods.union(mexicanFoods);
 // const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
 // console.log(uniqueItalianFoods);
 
-const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
+// const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
 // console.log(uniqueItaAndMex);
 
 // Maps: Fundamentals;
 // just watch about maps method
-const rest = new Map();
+// const rest = new Map();
 // to add pairs in map  , need to use set method like
 
-rest.set('name', 'Akash Tanduri Restaurant');
+// rest.set('name', 'Akash Tanduri Restaurant');
 
-rest.set(1, 'FarmHouse Pizza');
+// rest.set(1, 'FarmHouse Pizza');
 
 // Multiple data can be added through using set method
 
-rest
-  .set(2, 'Pizzaria')
-  .set(3, 'Biryani House')
-  .set(true, 'We are open :D')
-  .set(false, 'We are closed :(')
-  .set('open', 11)
-  .set('closed', 23);
-console.log(rest);
+// rest
+//   .set(2, 'Pizzaria')
+//   .set(3, 'Biryani House')
+//   .set(true, 'We are open :D')
+//   .set(false, 'We are closed :(')
+//   .set('open', 11)
+//   .set('closed', 23);
+// console.log(rest);
 
 // to get data from map can be used get method
 // console.log(rest.get(true));
-const time = 8;
-console.log(rest.get(time > rest.get('open') && time < rest.get('closed')));
-console.log(rest.has(1));
-rest.delete(1);
-console.log(rest.has(1));
-rest.clear();
-console.log(rest.size);
-const arrOfValue = [1, 3];
-rest.set(arrOfValue, 'test');
-console.log(rest.get(arrOfValue));
-rest.set(document.querySelector('h1'), 'Heading');
-console.log(rest);
+// const time = 8;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('closed')));
+// console.log(rest.has(1));
+// rest.delete(1);
+// console.log(rest.has(1));
+// rest.clear();
+// console.log(rest.size);
+// const arrOfValue = [1, 3];
+// rest.set(arrOfValue, 'test');
+// console.log(rest.get(arrOfValue));
+// rest.set(document.querySelector('h1'), 'Heading');
+// console.log(rest);
