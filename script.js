@@ -1021,3 +1021,5 @@ const question = new Map([
   [false, 'Try again '],
 ]);
 console.log(question);
+console.log();
+console.log(new Map(Object.entries(restaurant.openingHours)));
