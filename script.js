@@ -1076,3 +1076,4 @@ console.log(uniqueEvents);
 //     ? console.log(`[First Half] ${time}: ${event}`)
 //     : console.log(`[Second Half] ${time}: ${event}`);
 // }
+// console.log(NaN === NaN);
