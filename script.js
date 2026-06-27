@@ -1007,3 +1007,5 @@ console.log(rest.size);
 const arrOfValue = [1, 3];
 rest.set(arrOfValue, 'test');
 console.log(rest.get(arrOfValue));
+rest.set(document.querySelector('h1'), 'Heading');
+console.log(rest);
