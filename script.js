@@ -1041,3 +1041,5 @@ for (const [key, value] of question) {
 // console.log(question.entries());
 // console.log(question.keys());
 // console.log(question.values());
+
+// Summary: Which data structure to use
