@@ -1060,7 +1060,9 @@ const gameEvents = new Map([
   [80, '⚽️ GOAL'],
   [92, '🟥 Red Card'],
 ]);
-gameEvents.delete(64);
 
 // 2 challenge
+gameEvents.delete(64);
+
+// 3 challenge
 console.log(`An event happen on average, every ${90 / gameEvents.size}`);
