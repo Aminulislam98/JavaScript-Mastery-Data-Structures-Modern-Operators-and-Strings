@@ -1077,3 +1077,10 @@ console.log(uniqueEvents);
 //     : console.log(`[Second Half] ${time}: ${event}`);
 // }
 // console.log(NaN === NaN);
+
+// working with string part 1
+const airPlain = 'TAP Air Portugal';
+console.log(airPlain.indexOf('Portugal'));
+console.log(airPlain.length);
+// for slice method the first argument start from where you give index value and the second argument is for end value but it does not include the last index
+console.log(airPlain.slice(4, 7));
