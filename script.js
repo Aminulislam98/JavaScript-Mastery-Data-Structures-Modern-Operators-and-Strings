@@ -1093,3 +1093,8 @@ console.log(airPlain.slice(airPlain.lastIndexOf(' ') + 1));
 
 // when negative number is inside the slice method , it start extracting from end
 console.log(airPlain.slice(-2));
+
+// negative number  can be used between first argument and second argument
+
+console.log(airPlain.slice(1, -1));
+console.log(airPlain.slice(airPlain.indexOf('r'), -2));
