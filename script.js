@@ -1132,3 +1132,11 @@ const emailCorrectVersion = emailNotCorrect.toLowerCase().trim();
 email === emailCorrectVersion
   ? console.log('Matched')
   : console.log('Email did not match :(');
+
+// function checkEmailType(first, second) {
+//   const firstEmail = first;
+//   const secondEmail = second;
+// }
+let firstName = ' aminul    ';
+firstName = firstName.trimEnd();
+console.log(firstName);
