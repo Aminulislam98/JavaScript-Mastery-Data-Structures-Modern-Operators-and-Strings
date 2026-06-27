@@ -1112,3 +1112,8 @@ const uniqueEvents = [...events];
 // checkMiddleSeat('23B');
 // checkMiddleSeat('23B');
 // checkMiddleSeat('21');
+// Working with string : Part 2
+const name = 'aMinUl';
+const nameLower = name.toLowerCase();
+const nameCorrect = nameLower[0].toUpperCase() + nameLower.slice(1);
+console.log(nameCorrect);
