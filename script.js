@@ -990,8 +990,12 @@ rest
   .set(2, 'Pizzaria')
   .set(3, 'Biryani House')
   .set(true, 'We are open :D')
-  .set(false, 'We are closed :(');
+  .set(false, 'We are closed :(')
+  .set('open', 11)
+  .set('closed', 23);
 console.log(rest);
 
 // to get data from map can be used get method
-console.log(rest.get(true));
+// console.log(rest.get(true));
+const time = 8;
+console.log(rest.get(time > rest.get('open') && time < rest.get('closed')));
