@@ -1147,3 +1147,8 @@ console.log(priceGB);
 console.log(priceUS);
 const announcement = 'All passenger to boarding door 23. Boarding door 23!';
 console.log(announcement.replaceAll('door', 'gate'));
+
+const biman = 'Bangladesh biman';
+console.log(biman.includes('Ban'));
+console.log(biman.startsWith('Ba'));
+console.log(biman.endsWith('man'));
