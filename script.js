@@ -977,3 +977,4 @@ const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
 
 // Maps: Fundamentals;
 // just watch about maps method
+const rest = new Map();
