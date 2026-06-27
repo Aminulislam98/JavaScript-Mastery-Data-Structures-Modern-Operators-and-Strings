@@ -999,3 +999,4 @@ console.log(rest);
 // console.log(rest.get(true));
 const time = 8;
 console.log(rest.get(time > rest.get('open') && time < rest.get('closed')));
+console.log(rest.has(4));
