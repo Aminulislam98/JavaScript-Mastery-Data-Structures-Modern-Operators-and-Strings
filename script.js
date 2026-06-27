@@ -1084,3 +1084,9 @@ console.log(airPlain.indexOf('Portugal'));
 console.log(airPlain.length);
 // for slice method the first argument start from where you give index value and the second argument is for end value but it does not include the last index
 console.log(airPlain.slice(4, 7));
+
+console.log(airPlain.indexOf('Air'));
+
+console.log(airPlain.slice(0, airPlain.indexOf(' ')));
+// learned about last index of method which find last match;
+console.log(airPlain.slice(airPlain.lastIndexOf(' ') + 1));
