@@ -1116,11 +1116,19 @@ const uniqueEvents = [...events];
 const name = 'aMinUl';
 const nameLower = name.toLowerCase();
 const nameCorrect = nameLower[0].toUpperCase() + nameLower.slice(1);
-console.log(nameCorrect);
+// console.log(nameCorrect);
 function makeCorrectName(name) {
   const nameLowerCase = name.toLowerCase();
   const correct = nameLowerCase[0].toUpperCase() + nameLowerCase.slice(1);
   return correct;
 }
 
-console.log(makeCorrectName('aminuL'));
+// console.log(makeCorrectName('aminuL'));
+
+// comparing Email
+const email = 'aminul@aminulislam.co.uk';
+const emailNotCorrect = '   aminul@aminulislam.co.uk ';
+const emailCorrectVersion = emailNotCorrect.toLowerCase().trim();
+email === emailCorrectVersion
+  ? console.log('Matched')
+  : console.log('Email did not match :(');
