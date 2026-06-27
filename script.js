@@ -1140,3 +1140,10 @@ email === emailCorrectVersion
 let firstName = ' aminul    ';
 firstName = firstName.trimEnd();
 console.log(firstName);
+
+const priceGB = '288,84£';
+const priceUS = priceGB.replace(',', '.').replace('£', '$');
+console.log(priceGB);
+console.log(priceUS);
+const announcement = 'All passenger to boarding door 23. Boarding door 23!';
+console.log(announcement.replaceAll('door', 'gate'));
