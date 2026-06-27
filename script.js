@@ -1026,11 +1026,18 @@ console.log(new Map(Object.entries(restaurant.openingHours)));
 
 for (const [key, value] of question) {
   if (typeof key === 'number') {
-    console.log(`Answer is ${key}: ${value}`);
+    // console.log(`Answer is ${key}: ${value}`);
   }
 }
 
-const answer = Number(prompt('What is the answer ? '));
+// const answer = Number(prompt('What is the answer ? '));
 
-console.log(question.get(question.get('correct') === answer));
+// console.log(question.get(question.get('correct') === answer));
 // console.log(`${question.get(answer)} is correct answer`);
+
+// console.log(italianFoods);
+// console.log(question);
+// console.log([...question]);
+// console.log(question.entries());
+// console.log(question.keys());
+// console.log(question.values());
