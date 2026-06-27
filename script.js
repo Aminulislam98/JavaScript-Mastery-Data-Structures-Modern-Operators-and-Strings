@@ -1020,9 +1020,9 @@ const question = new Map([
   [true, 'Correct 👍'],
   [false, 'Try again '],
 ]);
-console.log(question);
-console.log();
-console.log(new Map(Object.entries(restaurant.openingHours)));
+// console.log(question);
+// console.log();
+// console.log(new Map(Object.entries(restaurant.openingHours)));
 
 for (const [key, value] of question) {
   if (typeof key === 'number') {
@@ -1060,16 +1060,19 @@ const gameEvents = new Map([
   [80, '⚽️ GOAL'],
   [92, '🟥 Red Card'],
 ]);
+const events = new Set(gameEvents.values());
+const uniqueEvents = [...events];
+console.log(uniqueEvents);
 
 // 2 challenge
-gameEvents.delete(64);
+// gameEvents.delete(64);
 
 // 3 challenge
-console.log(`An event happen on average, every ${90 / gameEvents.size}`);
+// console.log(`An event happen on average, every ${90 / gameEvents.size}`);
 
 // 4 challenge
-for (const [time, event] of gameEvents) {
-  time < 45
-    ? console.log(`[First Half] ${time}: ${event}`)
-    : console.log(`[Second Half] ${time}: ${event}`);
-}
+// for (const [time, event] of gameEvents) {
+//   time < 45
+//     ? console.log(`[First Half] ${time}: ${event}`)
+//     : console.log(`[Second Half] ${time}: ${event}`);
+// }
