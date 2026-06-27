@@ -978,3 +978,20 @@ const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
 // Maps: Fundamentals;
 // just watch about maps method
 const rest = new Map();
+// to add pairs in map  , need to use set method like
+
+rest.set('name', 'Akash Tanduri Restaurant');
+
+rest.set(1, 'FarmHouse Pizza');
+
+// Multiple data can be added through using set method
+
+rest
+  .set(2, 'Pizzaria')
+  .set(3, 'Biryani House')
+  .set(true, 'We are open :D')
+  .set(false, 'We are closed :(');
+console.log(rest);
+
+// to get data from map can be used get method
+console.log(rest.get(true));
