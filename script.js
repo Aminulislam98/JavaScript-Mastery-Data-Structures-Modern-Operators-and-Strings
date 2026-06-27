@@ -1113,42 +1113,54 @@ const uniqueEvents = [...events];
 // checkMiddleSeat('23B');
 // checkMiddleSeat('21');
 // Working with string : Part 2
-const name = 'aMinUl';
-const nameLower = name.toLowerCase();
-const nameCorrect = nameLower[0].toUpperCase() + nameLower.slice(1);
-// console.log(nameCorrect);
-function makeCorrectName(name) {
-  const nameLowerCase = name.toLowerCase();
-  const correct = nameLowerCase[0].toUpperCase() + nameLowerCase.slice(1);
-  return correct;
-}
+// const name = 'aMinUl';
+// const nameLower = name.toLowerCase();
+// const nameCorrect = nameLower[0].toUpperCase() + nameLower.slice(1);
+// // console.log(nameCorrect);
+// function makeCorrectName(name) {
+//   const nameLowerCase = name.toLowerCase();
+//   const correct = nameLowerCase[0].toUpperCase() + nameLowerCase.slice(1);
+//   return correct;
+// }
 
 // console.log(makeCorrectName('aminuL'));
 
 // comparing Email
-const email = 'aminul@aminulislam.co.uk';
-const emailNotCorrect = '   aminul@aminulislam.co.uk ';
-const emailCorrectVersion = emailNotCorrect.toLowerCase().trim();
-email === emailCorrectVersion
-  ? console.log('Matched')
-  : console.log('Email did not match :(');
+// const email = 'aminul@aminulislam.co.uk';
+// const emailNotCorrect = '   aminul@aminulislam.co.uk ';
+// const emailCorrectVersion = emailNotCorrect.toLowerCase().trim();
+// email === emailCorrectVersion
+//   ? console.log('Matched')
+//   : console.log('Email did not match :(');
 
 // function checkEmailType(first, second) {
 //   const firstEmail = first;
 //   const secondEmail = second;
 // }
-let firstName = ' aminul    ';
-firstName = firstName.trimEnd();
-console.log(firstName);
+// let firstName = ' aminul    ';
+// firstName = firstName.trimEnd();
+// console.log(firstName);
 
-const priceGB = '288,84£';
-const priceUS = priceGB.replace(',', '.').replace('£', '$');
-console.log(priceGB);
-console.log(priceUS);
-const announcement = 'All passenger to boarding door 23. Boarding door 23!';
-console.log(announcement.replaceAll('door', 'gate'));
+// const priceGB = '288,84£';
+// const priceUS = priceGB.replace(',', '.').replace('£', '$');
+// console.log(priceGB);
+// console.log(priceUS);
+// const announcement = 'All passenger to boarding door 23. Boarding door 23!';
+// console.log(announcement.replaceAll('door', 'gate'));
 
-const biman = 'Bangladesh biman';
-console.log(biman.includes('Ban'));
-console.log(biman.startsWith('Ba'));
-console.log(biman.endsWith('man'));
+// const biman = 'Bangladesh biman';
+// console.log(biman.includes('Ban'));
+// console.log(biman.startsWith('Ba'));
+// console.log(biman.endsWith('man'));
+
+// function checkBaggage(items) {
+//   const baggage = items.toLowerCase();
+//   if (baggage.includes('knife') || baggage.includes('gun')) {
+//     console.log('You are not allowed to board.');
+//   } else {
+//     console.log('Welcome aboard');
+//   }
+//   return baggage;
+// }
+// console.log(checkBaggage('I have Laptop gun knife'));
+// console.log(checkBaggage('I have drinks foods'));
