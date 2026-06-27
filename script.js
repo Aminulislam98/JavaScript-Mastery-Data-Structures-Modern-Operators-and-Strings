@@ -1062,7 +1062,7 @@ const gameEvents = new Map([
 ]);
 const events = new Set(gameEvents.values());
 const uniqueEvents = [...events];
-console.log(uniqueEvents);
+// console.log(uniqueEvents);
 
 // 2 challenge
 // gameEvents.delete(64);
@@ -1073,28 +1073,42 @@ console.log(uniqueEvents);
 // 4 challenge
 // for (const [time, event] of gameEvents) {
 //   time < 45
-//     ? console.log(`[First Half] ${time}: ${event}`)
+//
+//
+
 //     : console.log(`[Second Half] ${time}: ${event}`);
 // }
 // console.log(NaN === NaN);
 
 // working with string part 1
-const airPlain = 'TAP Air Portugal';
-console.log(airPlain.indexOf('Portugal'));
-console.log(airPlain.length);
+// const airPlain = 'TAP Air Portugal';
+// console.log(airPlain.indexOf('Portugal'));
+// console.log(airPlain.length);
 // for slice method the first argument start from where you give index value and the second argument is for end value but it does not include the last index
-console.log(airPlain.slice(4, 7));
+// console.log(airPlain.slice(4, 7));
 
-console.log(airPlain.indexOf('Air'));
+// console.log(airPlain.indexOf('Air'));
 
-console.log(airPlain.slice(0, airPlain.indexOf(' ')));
+// console.log(airPlain.slice(0, airPlain.indexOf(' ')));
 // learned about last index of method which find last match;
-console.log(airPlain.slice(airPlain.lastIndexOf(' ') + 1));
+// console.log(airPlain.slice(airPlain.lastIndexOf(' ') + 1));
 
 // when negative number is inside the slice method , it start extracting from end
-console.log(airPlain.slice(-2));
+// console.log(airPlain.slice(-2));
 
 // negative number  can be used between first argument and second argument
 
-console.log(airPlain.slice(1, -1));
-console.log(airPlain.slice(airPlain.indexOf('r'), -2));
+// console.log(airPlain.slice(1, -1));
+// console.log(airPlain.slice(airPlain.indexOf('r'), -2));
+
+// function checkMiddleSeat(seat) {
+//   const s = seat.slice(-1);
+//   if (s === 'B' || s === 'E') {
+//     console.log('You got the middle seat 😬💺');
+//   } else {
+//     console.log('You got lucky 😎');
+//   }
+// }
+// checkMiddleSeat('23B');
+// checkMiddleSeat('23B');
+// checkMiddleSeat('21');
