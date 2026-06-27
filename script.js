@@ -1002,5 +1002,8 @@ console.log(rest.get(time > rest.get('open') && time < rest.get('closed')));
 console.log(rest.has(1));
 rest.delete(1);
 console.log(rest.has(1));
-
+rest.clear();
 console.log(rest.size);
+const arrOfValue = [1, 3];
+rest.set(arrOfValue, 'test');
+console.log(rest.get(arrOfValue));
