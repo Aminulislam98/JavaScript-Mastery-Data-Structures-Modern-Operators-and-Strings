@@ -1009,3 +1009,15 @@ const italianMexicanFusion = italianFoods.union(mexicanFoods);
 // console.log(rest.get(arrOfValue));
 // rest.set(document.querySelector('h1'), 'Heading');
 // console.log(rest);
+
+// I learned about important thing is map constructor only allow one parameter that should be iterable like an array not object
+const question = new Map([
+  ['question', 'what is the best programming language in the world ?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct 👍'],
+  [false, 'Try again '],
+]);
+console.log(question);
