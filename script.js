@@ -965,7 +965,7 @@ const commonFoods = italianFoods.intersection(mexicanFoods);
 
 // union method
 const italianMexicanFusion = italianFoods.union(mexicanFoods);
-console.log(italianMexicanFusion);
+// console.log(italianMexicanFusion);
 
 // difference method : difference return the elements that are in the first set but not in the second set as in a new set
 
@@ -973,4 +973,6 @@ console.log(italianMexicanFusion);
 // console.log(uniqueItalianFoods);
 
 const uniqueItaAndMex = italianFoods.symmetricDifference(mexicanFoods);
-console.log(uniqueItaAndMex);
+// console.log(uniqueItaAndMex);
+
+// Maps: Fundamentals;
