@@ -1023,3 +1023,14 @@ const question = new Map([
 console.log(question);
 console.log();
 console.log(new Map(Object.entries(restaurant.openingHours)));
+
+for (const [key, value] of question) {
+  if (typeof key === 'number') {
+    console.log(`Answer is ${key}: ${value}`);
+  }
+}
+
+const answer = Number(prompt('What is the answer ? '));
+
+console.log(question.get(question.get('correct') === answer));
+// console.log(`${question.get(answer)} is correct answer`);
