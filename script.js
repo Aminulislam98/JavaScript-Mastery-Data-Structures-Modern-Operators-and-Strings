@@ -1180,11 +1180,11 @@ const uniqueEvents = [...events];
 //   const names = name.toLowerCase().split(' ');
 //   let properName = [];
 //   for (const n of names) {
-// properName.push(n[0].toUpperCase() + n.slice(1));
+//     // properName.push(n[0].toUpperCase() + n.slice(1));
 //     properName.push(n.replace(n[0], n[0].toUpperCase()));
 //   }
 //   console.log(typeof properName.join(' '));
-//   return properName.join(' ');
+//   return properName.join('');
 // }
 // console.log(capitalizationName('aminUl islAM'));
 
@@ -1208,3 +1208,19 @@ const uniqueEvents = [...events];
 // }
 
 // alertMessage(3);
+
+const messyName = 'first_name';
+function capitalizedName(name) {
+  const lowerCaseAndSplit = name.replaceAll('_', ' ').toLowerCase().split(' ');
+  const properName = [];
+  for (const n of lowerCaseAndSplit) {
+    if (n === '') {
+      continue;
+    } else {
+      properName.push(n[0].toUpperCase() + n.slice(1));
+    }
+  }
+  return properName.join('');
+}
+
+console.log(capitalizedName('aminUl_isLaM'));
