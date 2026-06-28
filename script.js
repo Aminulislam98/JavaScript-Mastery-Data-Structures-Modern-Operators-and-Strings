@@ -1166,24 +1166,38 @@ const uniqueEvents = [...events];
 // console.log(checkBaggage('I have drinks foods'));
 // console.log('I+am+very+smart+boy'.split('+'));
 // console.log('Aminul islam'.split(' '));
-const fullName = 'Aminul islam';
-const [first, last] = fullName.split(' ');
-const initialOFName = first + last;
+// const fullName = 'Aminul islam';
+// const [first, last] = fullName.split(' ');
+// const initialOFName = first + last;
 
-const newName = ['Mr', first, last.toUpperCase()].join(' ');
+// const newName = ['Mr', first, last.toUpperCase()].join(' ');
 
-console.log(newName);
+// console.log(newName);
 
 // Making function that will return proper capitalization name;
 
-function capitalizationName(name) {
-  const names = name.toLowerCase().split(' ');
-  let properName = [];
-  for (const n of names) {
-    // properName.push(n[0].toUpperCase() + n.slice(1));
-    properName.push(n.replace(n[0], n[0].toUpperCase()));
-  }
-  console.log(typeof properName.join(' '));
-  return properName.join(' ');
+// function capitalizationName(name) {
+//   const names = name.toLowerCase().split(' ');
+//   let properName = [];
+//   for (const n of names) {
+// properName.push(n[0].toUpperCase() + n.slice(1));
+//     properName.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(typeof properName.join(' '));
+//   return properName.join(' ');
+// }
+// console.log(capitalizationName('aminUl islAM'));
+
+const fn = 'aminul';
+const message = 'this is aminul';
+console.log(fn.padStart(22, '*'));
+console.log(message.padStart(22, '*'));
+
+const myCreditCard = '2323 3454 4534 9838';
+
+function maskCreditCard(number) {
+  const str = String(number);
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
 }
-console.log(capitalizationName('aminUl islAM'));
+console.log(maskCreditCard(2323090249040590));
