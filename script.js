@@ -1166,7 +1166,24 @@ const uniqueEvents = [...events];
 // console.log(checkBaggage('I have drinks foods'));
 // console.log('I+am+very+smart+boy'.split('+'));
 // console.log('Aminul islam'.split(' '));
-// const fullName = 'Aminul islam';
-// const [first, last] = fullName;
-// const initialOFName = first + last;
-// console.log(initialOFName.toUpperCase());
+const fullName = 'Aminul islam';
+const [first, last] = fullName.split(' ');
+const initialOFName = first + last;
+
+const newName = ['Mr', first, last.toUpperCase()].join(' ');
+
+console.log(newName);
+
+// Making function that will return proper capitalization name;
+
+function capitalizationName(name) {
+  const names = name.toLowerCase().split(' ');
+  let properName = [];
+  for (const n of names) {
+    // properName.push(n[0].toUpperCase() + n.slice(1));
+    properName.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(typeof properName.join(' '));
+  return properName.join(' ');
+}
+console.log(capitalizationName('aminUl islAM'));
