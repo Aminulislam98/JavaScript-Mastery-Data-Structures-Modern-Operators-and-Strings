@@ -1164,3 +1164,9 @@ const uniqueEvents = [...events];
 // }
 // console.log(checkBaggage('I have Laptop gun knife'));
 // console.log(checkBaggage('I have drinks foods'));
+// console.log('I+am+very+smart+boy'.split('+'));
+// console.log('Aminul islam'.split(' '));
+// const fullName = 'Aminul islam';
+// const [first, last] = fullName;
+// const initialOFName = first + last;
+// console.log(initialOFName.toUpperCase());
