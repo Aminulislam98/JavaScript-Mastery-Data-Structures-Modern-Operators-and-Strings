@@ -1201,3 +1201,10 @@ function maskCreditCard(number) {
   return last.padStart(str.length, '*');
 }
 console.log(maskCreditCard(2323090249040590));
+console.log('aminul '.repeat(2));
+
+function alertMessage(an) {
+  console.log(`${an} plane about to land. total ${'🛬'.repeat(an)}`);
+}
+
+alertMessage(3);
