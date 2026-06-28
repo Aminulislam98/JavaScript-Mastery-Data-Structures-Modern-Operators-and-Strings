@@ -1188,23 +1188,23 @@ const uniqueEvents = [...events];
 // }
 // console.log(capitalizationName('aminUl islAM'));
 
-const fn = 'aminul';
-const message = 'this is aminul';
-console.log(fn.padStart(22, '*'));
-console.log(message.padStart(22, '*'));
+// const fn = 'aminul';
+// const message = 'this is aminul';
+// console.log(fn.padStart(22, '*'));
+// console.log(message.padStart(22, '*'));
 
-const myCreditCard = '2323 3454 4534 9838';
+// const myCreditCard = '2323 3454 4534 9838';
 
-function maskCreditCard(number) {
-  const str = String(number);
-  const last = str.slice(-4);
-  return last.padStart(str.length, '*');
-}
-console.log(maskCreditCard(2323090249040590));
-console.log('aminul '.repeat(2));
+// function maskCreditCard(number) {
+//   const str = String(number);
+//   const last = str.slice(-4);
+//   return last.padStart(str.length, '*');
+// }
+// console.log(maskCreditCard(2323090249040590));
+// console.log('aminul '.repeat(2));
 
-function alertMessage(an) {
-  console.log(`${an} plane about to land. total ${'🛬'.repeat(an)}`);
-}
+// function alertMessage(an) {
+//   console.log(`${an} plane about to land. total ${'🛬'.repeat(an)}`);
+// }
 
-alertMessage(3);
+// alertMessage(3);
